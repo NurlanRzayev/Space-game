@@ -9,9 +9,9 @@ class Bullet(pygame.sprite.Sprite):
         self.rect.centerx = gun.rect.centerx
         self.rect.top = gun.rect.top
         self.color = 237, 236, 8
-        self.speed = 1
+        self.speed = 4
     def update(self): # этот метод унаследован от Sprite
-        self.rect.centery -= 1
+        self.rect.centery -= self.speed
     def draw_bullet(self):
         pygame.draw.rect(self.screen, self.color, self.rect)
     

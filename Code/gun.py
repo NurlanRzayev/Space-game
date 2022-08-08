@@ -15,6 +15,6 @@ class Gun():
         self.screen.blit(self.image, self.rect)
     def move(self):
         if self.mright and self.rect.right < self.screen_rect.right:
-            self.rect.centerx += 1
+            self.rect.centerx += 5
         if self.mleft and self.rect.left > self.screen_rect.left:
-            self.rect.centerx -= 1
+            self.rect.centerx -= 5

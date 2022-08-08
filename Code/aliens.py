@@ -6,3 +6,5 @@ class Alien(pygame.sprite.Sprite):
         super(Alien, self).__init__()
         self.screen = screen
         self.image = pygame.image.load('images\ino.png')
+        self.rect = self.image.get_rect()
+    
