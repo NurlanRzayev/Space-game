@@ -15,6 +15,7 @@ def run():
         controls.events(gun, screen, bullets)
         gun.move()
         controls.remove_bullet(bullets) 
+        controls.remove_aliens(aliens)
         controls.update_screen(screen, bg_color, gun, bullets, aliens)
     
 run()
