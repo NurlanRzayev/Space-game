@@ -18,3 +18,5 @@ class Gun():
             self.rect.centerx += 5
         if self.mleft and self.rect.left > self.screen_rect.left:
             self.rect.centerx -= 5
+    def gun_new_start(self):
+        self.rect.centerx = self.screen_rect.centerx
